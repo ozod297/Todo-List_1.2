@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="date-box">
+      <h2 class="full-time">Dd.Mm.Yy</h2>
+      <div>
+        <span class="hour">Hh</span> : <span class="minute">Mm</span> :
+        <span class="second">Ss</span>
+      </div>
+    </div>
+    <h1>Todo List</h1>
+
+    <form class="create-form">
+      <div class="create-input-postion">
+        <input name="todo" type="text" placeholder="type todo..." />
+
+        <button type="submit" class="btn">+</button>
+      </div>
+      <p id="message"></p>
+    </form>
+
+    <ul class="todo-lists"></ul>
+    <div class="modal hidden">
+      <div class="modal-header">
+        <h3>Change todo</h3>
+        <img src="./img/close.svg" width="25" alt="close" class="close-icon" />
+      </div>
+      <form class="edit-form">
+        <input
+          style="margin-bottom: 20px"
+          name="input"
+          type="text"
+          placeholder="type..."
+        />
+        <p id="as"></p>
+        <button class="save">Save</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
